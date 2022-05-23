@@ -1,1 +1,7 @@
-
+script.Parent.Touched:Connect(function(part)
+	local hum = part.Parent:WaitForChild('Humanoid')
+	
+	if hum ~= nil then
+		hum:TakeDamage(5)
+	end
+end)
